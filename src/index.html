@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Arthur's Portfolio Page</title>
+</head>
+<!-- background -->
+<body class="grid bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-100 to-gray-900 bg-contain h-screen p-4 sm:p-8 sm:pt-8 grid-flow-dense">
+
+    <!-- container -->
+    <div class=
+        "grid grid-cols-12
+        row-span-full
+        rounded-lg 
+        gap-2 
+        w-full
+        ">
+        <!-- header -->
+        <div class=
+            "col-span-12
+            rounded-lg 
+            bg-opacity-50 
+            text-center 
+            italic 
+            font-sans font-bold 
+            text-4xl
+            mb-4
+            ">Arthur - Web Developer</div>
+        <!-- skills box -->
+        <div class=
+            "bg-gradient-to-r 
+            from-zinc-900 
+            to-zinc-300 
+            grid grid-cols-3 
+            col-span-12
+            row-span-1
+            sm:col-span-8
+            md:col-span-9
+            lg:col-span-5 lg:row-span-2
+            xl:row-span-1
+            rounded-lg 
+            text-center 
+            p-2
+            italic 
+            font-bold
+            ">
+            <p class="text-lg text-slate-50">Skills:</p><p>IT literacy</p><p>Creativity</p>
+            <p>Attention to detail</p><p>Excellent communicator</p><p>Problem solving</p>
+        </div>
+        <!-- portrait -->
+        <div class=
+            "row-span-1
+            col-span-12
+            sm:col-span-4
+            sm:row-span-2
+            md:col-span-3
+            md:row-span-2
+            lg:col-span-2
+            lg:row-span-2
+            flex justify-center align-middle
+            "><img class="w-28 sm:w-44 md:w-48 rounded-full" src="./images/hi.jpg" /></div>
+        <!-- contact info  -->
+        <div class=
+            "bg-gradient-to-l 
+            from-zinc-900 
+            to-zinc-200 
+            grid grid-cols-2 
+            col-span-12
+            row-span-1
+            sm:col-span-8
+            md:col-span-9
+            lg:col-span-5 lg:row-span-2
+            xl:row-span-1
+            rounded-lg 
+            text-center text-black text-1xl
+            p-2 
+            italic 
+            break-words 
+            font-bold 
+        ">
+            <p>Arthur Modyman IV</p><p><a href="mailto:arthurmodymaniv@gmail.com">E-Mail</a></p><p>LinkedIn.com/art</p>
+            <p>T: (click to reveal)</p><p><a href="https://github.com/artimusmaximus">Github</a></p><p><a href="https://ivthe.art">personal page</a></p>
+        </div>
+        <!-- work experience  -->
+        <div class=
+            "bg-gradient-to-br from-zinc-900 to-zinc-500 
+            col-span-12
+            row-span-6
+             
+            md:col-span-6
+            lg:col-span-6
+            xl:col-span-5
+            rounded-lg 
+            text-slate-50 
+            p-10
+            ">
+            <h1 class="text-center font-bold text-2xl">Work Experience</h1><hr />
+            <h2 class="font-bold italic mb-2 mt-2">Web Developer | Pacific Panorama LLC | Everett, WA 2017-present</h2><hr />
+                <ul class="list-disc">
+                    <li>Front-end Web Applications Developer – Javascript, React, HTML, CSS, Firebase, MongoDB</li>
+                    <li>Provide 3D virtual tours via Matterport PRO2</li>
+                    <li>Produce High Dynamic Range (HDR) photos, flash ambient mix photos (flambient), and aerial images (drone). </li>
+                </ul>
+            <hr />
+            <ul class="list-disc">
+                <h2 class="font-bold italic mb-2 mt-2">Webmaster | Northtown Company | Huntington Beach, CA 2010 – 2016</h2><hr />
+                <li>Oversee the update/maintenance of the company’s static HTML website, product catalog production, and graphic designs.</li>
+                <li>Over 50 product web pages implemented</li>
+                <li>Material Safety Data Sheets (MSDS) updated to compliance</li>
+                <li>Optimized administrative duties for incoming sales orders, sales order processing, sales order confirmations, client confirmations of price adjustments/availability</li>
+                <li>Liaise with shipping firms to handle the logistics for outbound warehouse shipments to warehouse/job site.</li>
+            </ul>
+            <hr />
+            <h2 class="font-bold italic mb-2 mt-2">(Other) Patina Restaurant Group, Disneyland | Cerritos, Costa Mesa, Santa Ana, Anaheim 2003 – 2016</h2><hr />
+            <ul>
+                <li class="list-disc">Bar manager, Bartender, Server</li>
+                <li class="list-disc">Atmosphere Characters</li>
+            </ul>
+        </div>
+        <!-- education  -->
+        <div class=
+            "bg-gradient-to-bl from-zinc-900 to-zinc-400 
+            col-span-12
+            row-span-6 
+            md:col-span-6
+            lg:col-span-6
+            xl:col-span-5
+            rounded-lg 
+            text-slate-50 
+            p-10
+            ">
+            <h1 class="text-center font-bold text-2xl">Education</h1><hr />
+                <h2 class="font-bold italic">Modern - LinkedIn | Coursera | Udemy | Mongo University</h2><hr />
+                    <ul class="list-disc">
+                        <li>Learning Path: Become a MERN stack Javascript Developer - 20 hrs</li>
+                        <li>Learning Path: Become a React Developer - 22 hrs</li>
+                        <li>Learning Path: Become a Back-End Web Developer - 20 hrs</li>
+                        <li>Learning Path: Become a Full-Stack Web Developer - 29 hrs</li>
+                        <li>The Complete Modern Javascript Masterclass 2021 - 26 hrs</li>
+                        <li>Specialization: Python for everybody - 20 hrs</li>
+                        <li>individual certs. =></li>
+                        
+                    </ul>
+                        <li class="flex justify-center align-middle mt-1 mb-3">
+                            <button id="modalPop" class="px-4 py-3 text-black hover:bg-black hover:border-white hover:text-white bg-white rounded-md font-bold">View entire cert. list</button>
+                        </li>    
+                        <hr />
+                <h2 class="font-bold italic">Formal</h2><hr />
+                    <ul class="list-disc">
+                        <li>Orange Coast College 2003-2007 | Associate of Arts</li>
+                    </ul>
+                    <hr />
+        </div>
+        <!-- placeholder for this size -->
+        <div class="md:max-xl:col-span-3"></div>
+        <!-- misc skills -->
+        <div class=
+            "bg-gradient-to-t from-zinc-700 to-zinc-400 
+            text-slate-50 
+            col-span-12
+            row-span-4
+            md:col-span-6
+            lg:col-span-6
+            xl:col-span-2
+            rounded-lg 
+            text-center 
+            mb-6 
+            p-2 
+            break-words
+            ">
+            <p class="underline italic">Most Experienced in:</p><p>Front-end(Javascript(ES6)/React)</p>
+            <p class="underline italic">Comfortable using:</p><p>Modern CSS-(Tailwind/Bootstrap/MaterialUI/Vanilla)</p>
+            <p class="underline italic">Less familiar using:</p><p>Back-end server side coding</p>
+            <p class="underline italic">Currently advancing in:</p><p>Typescript, async JS</p>
+            <p class="underline italic">Want to learn more:</p><p>Server side coding</p>
+            <p class="underline italic">Portfolio Examples:</p><p><button id="portModal" class="px-4 py-3 text-black hover:bg-black hover:border-white hover:text-white bg-white rounded-md mt-3 mb-3 font-bold">Portfolio Pieces</button></p>
+        </div>
+        
+    </div>
+
+    <!-- modal  -->
+    <div id="modal" class=
+        "hidden 
+        bg-slate-400 
+        opacity-90 
+        w-full 
+        h-screen 
+        z-10 
+        fixed 
+        left-0 
+        top-0 
+        overflow-y-hidden overflow-auto
+        ">
+        <div id="modal-content" class=
+            "bg-gradient-to-bl from-zinc-900 to-zinc-500 
+            text-slate-50 
+            rounded-lg 
+            z-20 
+            w-11/12 sm:w-3/4 lg:w-1/2
+            m-auto 
+            overflow-y-auto 
+            shadow-lg
+            ">
+            <div id="modal-header">
+                <div id="modal-body" class="w-100 h-screen overflow-y-auto text-center">
+                    <span id="modal-close" class="float-right text-4xl hover:cursor-pointer mr-4 mt-4">X</span>
+                    <h2 id="modal-header2" class="text-center text-4xl italic p-2 mb-2 h-100"></h2><hr />
+                    <ul id="modal-ul" class="p-10 pt-5">
+                    </ul>
+                    <div id="portThumb" class=
+                        "grid grid-cols-1 
+                        col-span-1
+                        xl:col-span-1
+                        xl:grid-cols-5
+                        gap-6 
+                        p-3
+                        "></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Cert list modal -->
+    <script type="module" href="certs.js">
+        import { certz, pathLinksArr } from './certs.js';
+        
+        let revealModal = document.querySelector('#modal')
+        let modalBtn = document.querySelector('#modalPop')
+        let modalHeader = document.querySelector('#modal-header2')
+        let portThumb = document.querySelector('#portThumb')
+        let m = document.querySelector('#modal-ul')
+        modalBtn.addEventListener('click', e => {
+            if (e) {
+                m.innerHTML = certz.map(i => `<li>${i}</li>`).join('')
+                modalHeader.innerHTML = 'Javascript, NodeJS, React, HTML & CSS Certifications'
+                revealModal.classList.remove('hidden')
+            }
+        })
+        
+        // Portfolio piece modal
+
+        document.querySelector('#portModal').addEventListener('click', e => {
+
+            if (e) {
+                
+                modalHeader.innerText = 'Portfolio Page Examples'
+                portThumb.innerHTML = pathLinksArr.map(i =>`<div class="flex justify-center align-middle"><a class="shadow-lg" href="${i.url}" target="_blank"><img class="w-64" src="${i.path}" /></a></div>`).join('')
+                revealModal.classList.remove('hidden')
+            }
+        })
+
+        document.querySelector('#modal-close').addEventListener('click', () => {
+            revealModal.classList.add('hidden')
+            m.innerHTML = '';
+            portThumb.innerHTML = '';
+            modalHeader.innerText = '';
+        })
+
+    </script>
+    
+</body>
+    
+</html>
