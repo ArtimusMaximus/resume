@@ -82,14 +82,6 @@ const certz = [
 
 const pathLinksArr = [
         {
-            path: './images/thumbs/amd_thumb.png',
-            url: 'https://anthonymobiledetail04052022.web.app/',
-        },
-        {
-            path: './images/thumbs/art_thumb.png',
-            url: 'https://ivthe.art/',
-        },
-        {
             path: './images/thumbs/bfp_thumb.png',
             url: 'https://otwrentals-c3f25.web.app/',
         },
@@ -98,9 +90,17 @@ const pathLinksArr = [
             url: 'https://claims.gifts',
         },
         {
+            path: './images/thumbs/art_thumb.png',
+            url: 'https://ivthe.art/',
+        },
+        {
             path: './images/thumbs/ec_thumb.png',
             url: 'https://everettdining-7c7f6.web.app/'
         },
+        {
+            path: './images/thumbs/amd_thumb.png',
+            url: 'https://anthonymobiledetail04052022.web.app/',
+        }
     ];
 
 export { certz, pathLinksArr };
