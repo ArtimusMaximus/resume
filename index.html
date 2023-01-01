@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="cssdist/output.css" rel="stylesheet">
     <title>Arthur's Portfolio Page</title>
 </head>
 <!-- background -->
@@ -13,10 +13,11 @@
     <!-- container -->
     <div class=
         "grid grid-cols-12
-        row-span-full
+        
         rounded-lg 
         gap-2 
         w-full
+        
         ">
         <!-- header -->
         <div class=
@@ -86,7 +87,7 @@
         </div>
         <!-- work experience  -->
         <div class=
-            "bg-gradient-to-br from-zinc-900 to-zinc-500 
+            "bg-gradient-to-br from-zinc-900 to-zinc-500
             col-span-12
             row-span-6
              
@@ -163,11 +164,11 @@
             col-span-12
             row-span-4
             md:col-span-6
-            lg:col-span-6
+            lg:col-span-12
             xl:col-span-2
+            
             rounded-lg 
             text-center 
-            mb-6 
             p-2 
             break-words
             ">
@@ -178,6 +179,7 @@
             <p class="underline italic">Want to learn more:</p><p>Server side coding</p>
             <p class="underline italic">Portfolio Examples:</p><p><button id="portModal" class="px-4 py-3 text-black hover:bg-black hover:border-white hover:text-white bg-white rounded-md mt-3 mb-3 font-bold">Portfolio Pieces</button></p>
         </div>
+    
         
     </div>
 
@@ -224,8 +226,8 @@
     </div>
 
     <!--Cert list modal -->
-    <script type="module" href="./src/certs.js">
-        import { certz, pathLinksArr } from './src/certs.js';
+    <script type="module" href="./certs.js">
+        import { certz, pathLinksArr } from './certs.js';
         
         let revealModal = document.querySelector('#modal')
         let modalBtn = document.querySelector('#modalPop')
@@ -247,7 +249,10 @@
             if (e) {
                 
                 modalHeader.innerText = 'Portfolio Page Examples'
-                portThumb.innerHTML = pathLinksArr.map(i =>`<div class="flex justify-center align-middle"><a class="shadow-lg" href="${i.url}" target="_blank"><img class="w-64" src="${i.path}" /></a></div>`).join('')
+                portThumb.innerHTML = pathLinksArr.map((i, index) =>`
+                    <div class="flex justify-center align-middle">
+                        <a class="shadow-lg" href="${i.url}" target="_blank"><img class="w-64" src="${i.path}" /></a>
+                    </div>`).join('')
                 revealModal.classList.remove('hidden')
             }
         })

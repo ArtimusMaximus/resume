@@ -80,25 +80,36 @@ const certz = [
         "python specialization cert.pdf"
     ];
 
+    const imgUrl1 = new URL('./images/bfp_thumb.png', import.meta.url).href
+    const imgUrl2 = new URL('./images/cg_thumb.png', import.meta.url).href
+    const imgUrl3 = new URL('./images/art_thumb.png', import.meta.url).href
+    const imgUrl4 = new URL('./images/ec_thumb.png', import.meta.url).href
+    const imgUrl5 = new URL('./images/amd_thumb.jpg', import.meta.url).href
+
 const pathLinksArr = [
         {
-            path: './images/thumbs/bfp_thumb.png',
+            class: 'bfpThumb',
+            path: imgUrl1,
             url: 'https://otwrentals-c3f25.web.app/',
         },
         {
-            path: './images/thumbs/cg_thumb.png',
-            url: 'https://claims.gifts',
+            class: 'cgThumb',
+            path: imgUrl2,
+            url: 'https://claims.gifts/',
         },
         {
-            path: './images/thumbs/art_thumb.png',
+            class: 'artThumb',
+            path: imgUrl3,
             url: 'https://ivthe.art/',
         },
         {
-            path: './images/thumbs/ec_thumb.png',
+            class: 'ecThumb',
+            path: imgUrl4,
             url: 'https://everettdining-7c7f6.web.app/'
         },
         {
-            path: './images/thumbs/amd_thumb.png',
+            class: 'amdThumb',
+            path: imgUrl5,
             url: 'https://anthonymobiledetail04052022.web.app/',
         }
     ];
