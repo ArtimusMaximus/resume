@@ -152,6 +152,19 @@ const certz2 = [
     const imgUrl4 = new URL('./images/ec_thumb.png', import.meta.url).href
     const imgUrl5 = new URL('./images/amd_thumb.jpg', import.meta.url).href
 
+    const jpgArr = [];
+
+    (function mapJpg() {
+        let img;
+        for (let i=0; i < certz2.length; i+=1) {
+            let k = certz2[i]
+            img = new URL(`./images/cert_pdf/${k}`, import.meta.url).href
+            jpgArr.push({ pic: img, desc: k })
+        }
+        return jpgArr;
+    }())
+    
+
 const pathLinksArr = [
         {
             class: 'bfpThumb',
@@ -185,7 +198,7 @@ const pathLinksArr = [
         }
     ];
 
-export { certz, certz2, pathLinksArr };
+export { certz, certz2, jpgArr, pathLinksArr };
 
 
     

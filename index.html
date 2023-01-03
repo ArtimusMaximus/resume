@@ -274,7 +274,9 @@
 
     <!--Cert list modal -->
     <script type="module" href="./certs.js">
-        import { certz, certz2, pathLinksArr } from './certs.js';
+        import { certz, certz2, jpgArr, pathLinksArr } from './certs.js';
+
+        console.log(jpgArr);
         
         let revealModal = document.querySelector('#modal')
         let modalBtn = document.querySelector('#modalPop')
@@ -288,7 +290,7 @@
         // })
         modalBtn.addEventListener('click', e => {
             if (e) {
-                m.innerHTML = certz2.map(i => `<li class="certz"><img loading="lazy" src="./images/cert_pdf/${i}" /><label class="font-bold">${i.slice(0, i.length - 6)}</label></li>`).join('')
+                m.innerHTML = jpgArr.map(i => `<li class="certz"><img loading="lazy" src="${i.pic}" /><label class="font-bold">${i.desc.slice(0, i.desc.length - 6)}</label></li>`).join('')
                 modalHeader.innerHTML = 'Javascript, NodeJS, React, HTML & CSS Certifications'
                 revealModal.classList.remove('hidden')
             }
