@@ -86,26 +86,31 @@ const pathLinksArr = [
             class: 'bfpThumb',
             path: imgUrl1,
             url: 'https://otwrentals-c3f25.web.app/',
+            desc: 'React Single Page Application'
         },
         {
             class: 'cgThumb',
             path: imgUrl2,
             url: 'https://claims.gifts/',
+            desc: 'React/Firebase Full Stack realtime DB'
         },
         {
             class: 'artThumb',
             path: imgUrl3,
             url: 'https://ivthe.art/',
+            desc: 'Personal page'
         },
         {
             class: 'ecThumb',
             path: imgUrl4,
-            url: 'https://everettdining-7c7f6.web.app/'
+            url: 'https://everettdining-7c7f6.web.app/',
+            desc: 'Community coffee lovers page'
         },
         {
             class: 'amdThumb',
             path: imgUrl5,
             url: 'https://anthonymobiledetail04052022.web.app/',
+            desc: 'Small business Info page'
         }
     ];
 
