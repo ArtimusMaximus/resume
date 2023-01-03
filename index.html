@@ -181,7 +181,7 @@
                     </ul>
                     <hr />
                     <div class="grid grid-cols-4 mt-3">
-                        <div class="flex justify-center"><img src="./images/svg/javascriptlogo.svg" width="45px" alt=""></div>
+                        <div class="flex justify-center dropdown"><img src="./images/svg/javascriptlogo.svg" width="45px" alt=""></div>
                         <div class="flex justify-center"><img src="./images/svg/reactlogo.svg" width="45px" alt=""></div>
                         <div class="flex justify-center"><img src="./images/svg/html5 logo.svg" width="45px" alt=""></div>
                         <div class="flex justify-center"><img src="./images/svg/express.svg" width="45px" alt=""></div>
@@ -194,6 +194,8 @@
                     </div>
                     <div class="grid grid-cols-1">
                         <!-- <div class="flex justify-center"><img src="./images/svg/tailwindcss-ar21.svg" height="55px" /></div> -->
+                        <p class="text-center mt-4">Thank you for visiting my portfolio page.</p>
+                        <p class="text-center mt-4">Please send any inquiries to my provided <a class="underline" target="_blank" href="mailto:arthurmodymaniv@gmail.com">Email</a> or <a class="underline" href="https://www.linkedin.com/in/arthur-m-16a8a149/" target="_blank">LinkedIn.</a></p>
                     </div>
                     <!-- <div class="grid grid-cols-3">
                         <div class="col-span-1"></div>
@@ -272,16 +274,21 @@
 
     <!--Cert list modal -->
     <script type="module" href="./certs.js">
-        import { certz, pathLinksArr } from './certs.js';
+        import { certz, certz2, pathLinksArr } from './certs.js';
         
         let revealModal = document.querySelector('#modal')
         let modalBtn = document.querySelector('#modalPop')
         let modalHeader = document.querySelector('#modal-header2')
         let portThumb = document.querySelector('#portThumb')
         let m = document.querySelector('#modal-ul')
+        // document.querySelectorAll('.certz').addEventListener('click', e => {
+        //     if (e) {
+        //         this.innerHTML
+        //     }
+        // })
         modalBtn.addEventListener('click', e => {
             if (e) {
-                m.innerHTML = certz.map(i => `<li>${i}</li>`).join('')
+                m.innerHTML = certz2.map(i => `<li class="certz"><img loading="lazy" src="./images/cert_pdf/${i}" /><label class="font-bold">${i.slice(0, i.length - 6)}</label></li>`).join('')
                 modalHeader.innerHTML = 'Javascript, NodeJS, React, HTML & CSS Certifications'
                 revealModal.classList.remove('hidden')
             }
@@ -296,7 +303,7 @@
                 modalHeader.innerText = 'Portfolio Page Examples'
                 portThumb.innerHTML = pathLinksArr.map((i, index) =>`
                     <div class="flex justify-center align-middle">
-                        <a class="shadow-lg" href="${i.url}" target="_blank"><img class="w-64" src="${i.path}" /><label>${i.desc}</label></a>
+                        <a class="shadow-lg" href="${i.url}" target="_blank"><img class="w-64" src="${i.path}" /><label class="font-bold">${i.desc}</label></a>
                     </div>`).join('')
                 revealModal.classList.remove('hidden')
             }
@@ -312,12 +319,12 @@
     </script>
 
     <!-- Time spent -->
-    <script type="module" href="certs2.js">
+    <!-- <script type="module" href="certs2.js">
         import { certsObjArr } from './certs2.js'
         let arr = certsObjArr.map(i => typeof i.time === 'number' ? i.time += i.time : 0)
         console.log(arr.reduce((a,b) => a + b))
        
-    </script>
+    </script> -->
     
 </body>
     

@@ -75,6 +75,77 @@ const certz = [
     "python specialization cert.pdf",
     ];
 
+const certz2 = [
+    "Arthur Modyman IV-JustJavaScript.com-certificate-1.jpg",
+"Capstonr retrieving, processing and visualizing data w python Cert 5-1.jpg",
+"CertificateOfCompletion_Advanced Express-1.jpg",
+"CertificateOfCompletion_Advanced Node.js-1.jpg",
+"CertificateOfCompletion_Advanced npm-1.jpg",
+"CertificateOfCompletion_Become a BackEnd Web Developer-1.jpg",
+"CertificateOfCompletion_Become a FullStack Web Developer-1.jpg",
+"CertificateOfCompletion_Become a JavaScript Developer-1.jpg",
+"CertificateOfCompletion_Become a React Developer-1.jpg",
+"CertificateOfCompletion_Building RESTful APIs with Node.js and Express-1.jpg",
+"CertificateOfCompletion_Building a Website with Node.js and Express.js-1.jpg",
+"CertificateOfCompletion_CSS Essential Training-1.jpg",
+"CertificateOfCompletion_Creating a Serverless Application Using React in AWS-1.jpg",
+"CertificateOfCompletion_Databases for Node.js Developers-1.jpg",
+"CertificateOfCompletion_DevOps Foundations-1.jpg",
+"CertificateOfCompletion_Developing for Web Performance-1.jpg",
+"CertificateOfCompletion_Explore Web Development with Node.js-1.jpg",
+"CertificateOfCompletion_Express Essential Training-1.jpg",
+"CertificateOfCompletion_Express Essential Training2-1.jpg",
+"CertificateOfCompletion_HTML Essential Training-1.jpg",
+"CertificateOfCompletion_HTTP Essential Training-1.jpg",
+"CertificateOfCompletion_JSON Essential Training-1.jpg",
+"CertificateOfCompletion_JavaScript Async-1.jpg",
+"CertificateOfCompletion_JavaScript Best Practices for Data-1.jpg",
+"CertificateOfCompletion_JavaScript Classes-1.jpg",
+"CertificateOfCompletion_JavaScript Code Challenges-1.jpg",
+"CertificateOfCompletion_JavaScript Essential Training-1.jpg",
+"CertificateOfCompletion_JavaScript Functions-1.jpg",
+"CertificateOfCompletion_JavaScript Modern Browser APIs-1.jpg",
+"CertificateOfCompletion_JavaScript Patterns-1.jpg",
+"CertificateOfCompletion_Learning ECMAScript 6 ES6-1.jpg",
+"CertificateOfCompletion_Learning FullStack JavaScript Development MongoDB Node and React-1.jpg",
+"CertificateOfCompletion_Learning Functional Programming with JavaScript ES5-1.jpg",
+"CertificateOfCompletion_Learning Functional Programming with JavaScript ES6-1.jpg",
+"CertificateOfCompletion_Learning MongoDB-1.jpg",
+"CertificateOfCompletion_Learning Node.js-1.jpg",
+"CertificateOfCompletion_Learning REST APIs-1.jpg",
+"CertificateOfCompletion_Learning React.js-1.jpg",
+"CertificateOfCompletion_Learning npm the Node Package Manager-1.jpg",
+"CertificateOfCompletion_MERN Essential Training-1.jpg",
+"CertificateOfCompletion_NoSQL Essential Training-1.jpg",
+"CertificateOfCompletion_Node.js Essential Training-1.jpg",
+"CertificateOfCompletion_Node.js Microservices-1.jpg",
+"CertificateOfCompletion_Node.js RealTime Web with Socket.IO-1.jpg",
+"CertificateOfCompletion_Node.js Securing RESTful APIs-1.jpg",
+"CertificateOfCompletion_Node.js Security-1.jpg",
+"CertificateOfCompletion_Node.js Testing and Code Quality-1.jpg",
+"CertificateOfCompletion_Programming Foundations Web Security-1.jpg",
+"CertificateOfCompletion_React Context API Development-1.jpg",
+"CertificateOfCompletion_React Creating and Hosting a FullStack Site-1.jpg",
+"CertificateOfCompletion_React Ecosystems-1.jpg",
+"CertificateOfCompletion_React Hooks-1.jpg",
+"CertificateOfCompletion_React SPAs-1.jpg",
+"CertificateOfCompletion_React Working with APIs-1.jpg",
+"CertificateOfCompletion_React.js Essential Training-1.jpg",
+"CertificateOfCompletion_SQL Essential Training-1.jpg",
+"CertificateOfCompletion_Search Techniques for Web Developers-1.jpg",
+"CertificateOfCompletion_TypeScript ObjectOriented Programming-1.jpg",
+"Coursera Certificate 1-1.jpg",
+"FE web UI frameworks and tools BS4-1.jpg",
+"Python Data Structures Coursera Cert 2 -1.jpg",
+"Python to access web data Cert 3-1.jpg",
+"React js Building an Interface-1.jpg",
+"Udemy 11 js features-1.jpg",
+"Using Databases w Python Cert 4-1.jpg",
+"devops scripting w python spec cert-1.jpg",
+"js masterclass cert-1.jpg",
+"python specialization cert-1.jpg"
+];
+
     const imgUrl1 = new URL('./images/bfp_thumb.png', import.meta.url).href
     const imgUrl2 = new URL('./images/cg_thumb.png', import.meta.url).href
     const imgUrl3 = new URL('./images/art_thumb.png', import.meta.url).href
@@ -92,7 +163,7 @@ const pathLinksArr = [
             class: 'cgThumb',
             path: imgUrl2,
             url: 'https://claims.gifts/',
-            desc: 'React/Firebase Full Stack realtime DB'
+            desc: 'React/Firebase Full Stack Realtime DB'
         },
         {
             class: 'artThumb',
@@ -104,7 +175,7 @@ const pathLinksArr = [
             class: 'ecThumb',
             path: imgUrl4,
             url: 'https://everettdining-7c7f6.web.app/',
-            desc: 'Community coffee lovers page'
+            desc: "City's small business coffee shop API"
         },
         {
             class: 'amdThumb',
@@ -114,7 +185,7 @@ const pathLinksArr = [
         }
     ];
 
-export { certz, pathLinksArr };
+export { certz, certz2, pathLinksArr };
 
 
     
