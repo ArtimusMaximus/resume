@@ -1,4 +1,4 @@
-
+// npx tailwindcss -i './input.css' -o './cssdist/output.css' --watch
     
 const certz = [
     "Arthur Modyman IV-JustJavaScript.com-certificate.pdf",
@@ -151,6 +151,8 @@ const certz2 = [
     const imgUrl3 = new URL('./images/art_thumb.png', import.meta.url).href
     const imgUrl4 = new URL('./images/ec_thumb.png', import.meta.url).href
     const imgUrl5 = new URL('./images/amd_thumb.jpg', import.meta.url).href
+    const imgUrl6 = new URL('./images/colordesignweb_thumb.png', import.meta.url).href
+    const imgUrl7 = new URL('./images/groceries_thumb.png', import.meta.url).href
 
     const jpgArr = [];
 
@@ -170,7 +172,19 @@ const pathLinksArr = [
             class: 'bfpThumb',
             path: imgUrl1,
             url: 'https://otwrentals-c3f25.web.app/',
-            desc: 'React Single Page Application'
+            desc: 'React SPA rental co. page'
+        },
+        {
+            class: 'colorThumb',
+            path: imgUrl6,
+            url: 'https://colordesign-31d23.web.app/Home',
+            desc: 'Privately owned restaurant'
+        },
+        {
+            class: 'groceriesThumb',
+            path: imgUrl7,
+            url: 'https://react-tw-daisy-groceries.web.app/',
+            desc: 'Quick EZ mobile shopping list'
         },
         {
             class: 'cgThumb',
@@ -182,20 +196,21 @@ const pathLinksArr = [
             class: 'artThumb',
             path: imgUrl3,
             url: 'https://ivthe.art/',
-            desc: 'Personal page'
+            desc: 'My Personal page'
         },
         {
             class: 'ecThumb',
             path: imgUrl4,
             url: 'https://everettdining-7c7f6.web.app/',
-            desc: "City's small business coffee shop API"
+            desc: "Privately owned coffee shops API"
         },
         {
             class: 'amdThumb',
             path: imgUrl5,
             url: 'https://anthonymobiledetail04052022.web.app/',
             desc: 'Small business Info page'
-        }
+        },
+        
     ];
 
 export { certz, certz2, jpgArr, pathLinksArr };
