@@ -11,6 +11,11 @@ module.exports = {
         "cgThumb": "url('../src/images/thumbs/cg_thumb.png')",
         "ecThumb": "url('../src/images/thumbs/ec_thumb.png')"
       },
+      colors: {
+        "deepBlue" : "#2a303c",
+        "deepBlueMid" : "#657491",
+        "deepBlueLight" : "#a1b8e6"
+      }
     }
     
   },
