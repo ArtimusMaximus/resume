@@ -155,6 +155,7 @@ const certz2 = [
     const imgUrl5 = new URL('./images/amd_thumb.jpg', import.meta.url).href
     const imgUrl6 = new URL('./images/colordesignweb_thumb.png', import.meta.url).href
     const imgUrl7 = new URL('./images/groceries_thumb.png', import.meta.url).href
+    const imgUrl8 = new URL('./images/ecmascript-app.png', import.meta.url).href
 
     const jpgArr = [];
 
@@ -187,6 +188,12 @@ const pathLinksArr = [
             path: imgUrl7,
             url: 'https://react-tw-daisy-groceries.web.app/',
             desc: 'Quick EZ mobile shopping list'
+        },
+        {
+            class: 'openaigroceriesThumb',
+            path: imgUrl8,
+            url: 'https://ecmascript.app/',
+            desc: 'OpenAi infused shopping list, with saveable lists'
         },
         {
             class: 'cgThumb',
