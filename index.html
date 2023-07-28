@@ -39,11 +39,10 @@
             <div class="text-2xl pt-4 text-deepBlueMid">A. Modyman</div>
         </div>
         
-        <!-- skills box -->
+        <!-- skills box  bg-gradient-to-r from-zinc-900 to-zinc-300 -->
         <div class=
-            "bg-gradient-to-r 
-            from-zinc-900 
-            to-zinc-300 
+            "bg-alum
+            bg-slate-900
             grid grid-cols-3 
             col-span-12
             row-span-1
@@ -58,8 +57,8 @@
             font-bold
             border-4 border-solid border-deepBlue
             ">
-            <p class="text-lg text-slate-50 my-auto">Skills:</p><p class="my-auto">Front-End Web Dev.</p><p class="my-auto">Creative Design</p>
-            <p class="my-auto">Semantic HTML</p><p class="my-auto">Web Best Practices</p><p class="my-auto">Problem solving</p>
+            <p class="text-lg text-slate-50 my-auto">Skills:</p><p class="my-auto text-slate-300">Front-End Web Dev.</p><p class="my-auto text-slate-300">Creative Design</p>
+            <p class="my-auto text-slate-300">Semantic HTML</p><p class="my-auto text-slate-300">Web Best Practices</p><p class="my-auto text-slate-300">Problem solving</p>
         </div>
         <!-- portrait -->
         <div class=
@@ -73,11 +72,10 @@
             lg:row-span-2
             flex justify-center items-center
             "><img class="w-56 sm:w-44 md:w-48 rounded-full border-4 border-solid border-deepBlueLight" src="./images/art.jpg"/></div>
-        <!-- contact info  -->
+        <!-- contact info  bg-gradient-to-l from-zinc-900 to-zinc-200 -->
         <div class=
-            "bg-gradient-to-l 
-            from-zinc-900 
-            to-zinc-200 
+            "bg-alum
+            bg-slate-900
             grid grid-cols-2 
             col-span-12
             row-span-1
@@ -122,9 +120,10 @@
                 </a>
             </p>
         </div>
-        <!-- work experience  -->
+        <!-- work experience  prev-bg: bg-gradient-to-br from-zinc-900 to-zinc-500--> 
         <div class=
-            "bg-gradient-to-br from-zinc-900 to-zinc-500
+            "bg-brushed
+            bg-slate-700
             col-span-12
             row-span-6
             md:col-span-6
@@ -163,9 +162,10 @@
                 <li class="list-disc">Atmosphere Characters</li>
             </ul>
         </div>
-        <!-- education  -->
+        <!-- education  prev-bg: bg-gradient-to-bl from-zinc-900 to-zinc-400 -->
         <div class=
-            "bg-gradient-to-bl from-zinc-900 to-zinc-400 
+            "bg-brushed
+            bg-slate-700
             col-span-12
             row-span-6 
             md:col-span-6
@@ -218,9 +218,10 @@
         </div>
         <!-- placeholder for this size -->
         <div class="md:max-xl:col-span-3"></div>
-        <!-- misc skills -->
+        <!-- misc skills bg-gradient-to-t from-zinc-700 to-zinc-400-->
         <div class=
-            "bg-gradient-to-t from-zinc-700 to-zinc-400 
+            "bg-brushed
+            bg-slate-700
             text-slate-50 
             col-span-12
             row-span-4
@@ -246,7 +247,7 @@
     <!-- modal  -->
     <div id="modal" class=
         "hidden 
-        bg-slate-400 
+        bg-slate-700 
         opacity-90 
         w-full 
         h-screen 
@@ -256,8 +257,10 @@
         top-0 
         overflow-y-hidden overflow-auto
         ">
+        <!-- bg-gradient-to-bl from-zinc-900 to-zinc-500  -->
         <div id="modal-content" class=
-            "bg-gradient-to-bl from-zinc-900 to-zinc-500 
+            "bg-brushed
+            bg-slate-700
             text-slate-50 
             rounded-lg 
             z-20 
@@ -313,8 +316,8 @@
                 
                 modalHeader.innerText = 'Portfolio Page Examples'
                 portThumb.innerHTML = pathLinksArr.map((i, index) =>`
-                    <div class="flex justify-center align-middle">
-                        <a class="shadow-lg h-fit" href="${i.url}" target="_blank"><img class="w-64" src="${i.path}" /><label class="font-bold">${i.desc}</label></a>
+                    <div class="flex justify-center items-center">
+                        <a class="shadow-lg h-fit" href="${i.url}" target="_blank"><img class="z-50 w-64 mx-auto hover:transform hover:scale-125 hover:duration-500 hover:ease-in-out" src="${i.path}" /><label class="font-bold">${i.desc}</label></a>
                     </div>`).join('')
                 revealModal.classList.remove('hidden')
             }

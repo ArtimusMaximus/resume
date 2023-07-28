@@ -9,7 +9,10 @@ module.exports = {
         "artThumb": "url('../src/images/thumbs/art_thumb.png')",
         "bfpThumb": "url('../src/images/thumbs/bfp_thumb.png')",
         "cgThumb": "url('../src/images/thumbs/cg_thumb.png')",
-        "ecThumb": "url('../src/images/thumbs/ec_thumb.png')"
+        "ecThumb": "url('../src/images/thumbs/ec_thumb.png')",
+        "brushed": "url('../src/images/brushed-alum.png')",
+        "gm": "url('../src/images/gun-metal.png')",
+        "alum": "url('../src/images/light-aluminum.png')",
       },
       colors: {
         "deepBlue" : "#2a303c",

@@ -156,6 +156,7 @@ const certz2 = [
     const imgUrl6 = new URL('./images/colordesignweb_thumb.png', import.meta.url).href
     const imgUrl7 = new URL('./images/groceries_thumb.png', import.meta.url).href
     const imgUrl8 = new URL('./images/ecmascript-app.png', import.meta.url).href
+    const imgUrl9 = new URL('./images/guitarist_page.jpg', import.meta.url).href
 
     const jpgArr = [];
 
@@ -218,6 +219,12 @@ const pathLinksArr = [
             path: imgUrl5,
             url: 'https://anthonymobiledetail04052022.web.app/',
             desc: 'Small business Info page'
+        },
+        {
+            class: 'guitaristThumb',
+            path: imgUrl9,
+            url: 'https://jmarxmusic.web.app/',
+            desc: 'Luxury & Wedding Guitarist page'
         },
         
     ];
