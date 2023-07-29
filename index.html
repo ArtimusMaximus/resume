@@ -71,7 +71,11 @@
             lg:col-span-2
             lg:row-span-2
             flex justify-center items-center
-            "><img class="w-56 sm:w-44 md:w-48 rounded-full border-4 border-solid border-deepBlueLight" src="./images/art.jpg"/></div>
+            ">
+            
+            <img class="w-56 sm:w-44 md:w-48 rounded-full border-4 border-solid border-deepBlueLight" src="./images/art.avif" alt="Arthur M. Headshot"/>
+            
+        </div>
         <!-- contact info  bg-gradient-to-l from-zinc-900 to-zinc-200 -->
         <div class=
             "bg-alum
@@ -300,7 +304,7 @@
 
     <!--Cert list modal -->
     <script type="module" href="./certs.js">
-        import { certz, certz2, jpgArr, pathLinksArr } from './certs.js';
+        import { certz, certz2, certz3, jpgArr, avifArr, pathLinksArr } from './certs.js';
         
 
         
@@ -312,7 +316,7 @@
        
         modalBtn.addEventListener('click', e => {
             if (e) {
-                m.innerHTML = jpgArr.map(i => `<li class="certz"><img loading="lazy" src="${i.pic}" /><label class="font-bold">${i.desc.slice(0, i.desc.length - 6)}</label></li>`).join('')
+                m.innerHTML = avifArr.map(i => `<li class="certz"><img loading="lazy" src="${i.pic}" /><label class="font-bold">${i.desc.slice(0, i.desc.length - 6)}</label></li>`).join('')
                 modalHeader.innerHTML = 'Javascript, NodeJS, React, HTML & CSS Certifications'
                 revealModal.classList.remove('hidden')
             }
