@@ -1,0 +1,16 @@
+{
+  "name": "arthurportfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "css": "npx tailwindcss -i './input.css' -o './cssdist/output.css' --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.4",
+    "vite": "^4.0.0"
+  }
+}
