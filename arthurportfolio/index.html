@@ -91,9 +91,11 @@
             lg:col-span-2
             lg:row-span-2
             flex justify-center items-center
+            flex-col
             ">
 
             <img class="w-56 sm:w-44 md:w-48 rounded-full border-4 border-solid border-deepBlueLight" src="./images/art.avif" alt="Arthur M. Headshot"/>
+            <button id="portModal" class="portModal sm:hidden px-4 py-3 text-deepBlueMid hover:bg-black hover:border-white hover:text-white bg-white rounded-md mt-3 mb-3 font-bold btn-block">Portfolio Pieces</button>
 
         </div>
         <!-- contact info  bg-gradient-to-l from-zinc-900 to-zinc-200 -->
@@ -269,7 +271,7 @@
             break-words
             border-4 border-solid border-deepBlueLight
             ">
-            <button id="portModal" class="px-4 py-3 text-deepBlueMid hover:bg-black hover:border-white hover:text-white bg-white rounded-md mt-3 mb-3 font-bold btn-block">Portfolio Pieces</button>
+            <button id="portModal" class="portModal px-4 py-3 text-deepBlueMid hover:bg-black hover:border-white hover:text-white bg-white rounded-md mt-3 mb-3 font-bold btn-block">Portfolio Pieces</button>
             <p class="underline">JS Libraries/frameworks/tools</p><strong>NextJS, React, ExpressJS, Vite</strong>
             <p class="underline">CSS Libraries using:</p><strong>Modern CSS-(Tailwind/Bootstrap/MaterialUI/Vanilla)</strong>
             <p class="underline">Specialty:</p><strong>Full stack application development, API integration</strong>
@@ -345,7 +347,7 @@
 
         // Portfolio piece modal
 
-        document.querySelector('#portModal').addEventListener('click', e => {
+        document.querySelectorAll('.portModal').forEach(btn => btn.addEventListener('click', e => {
 
             if (e) {
 
@@ -357,10 +359,9 @@
                     </div>`).join('')
                 revealModal.classList.remove('hidden')
             }
-        });
+        }));
 
         function closeModalAndClear(e){
-            console.log(e.target.id);
             if (e.target.id === 'modal' || e.target.id === 'modal-close') {
                 revealModal.classList.add('hidden')
                 m.innerHTML = '';
