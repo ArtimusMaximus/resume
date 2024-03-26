@@ -239,6 +239,7 @@ const certz3 = [
     const imgUrl7 = new URL('./images/portfolio_page_thumbs/coffee_portfolio_3_screens.png', import.meta.url).href
     const imgUrl8 = new URL('./images/portfolio_page_thumbs/mobile_detail_portfolio_3_screens.png', import.meta.url).href
     const imgUrl9 = new URL('./images/portfolio_page_thumbs/jmarx_music_portfolio_3_screens.png', import.meta.url).href
+    const imgUrl10 = new URL('./images/portfolio_page_thumbs/NUA_portfolio_3_screens.png', import.meta.url).href
 
 
     const jpgArr = [];
@@ -277,6 +278,12 @@ const pathLinksArr = [
             path: imgUrl9,
             url: 'https://jmarxmusic.web.app/',
             desc: 'Luxury & Wedding Guitarist page'
+        },
+        {
+            class: 'nuaThumb',
+            path: imgUrl10,
+            url: '/',
+            desc: 'Node Unifi App & Device Manager'
         },
         {
             class: 'artThumb',
