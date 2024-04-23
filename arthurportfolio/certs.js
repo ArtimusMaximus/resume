@@ -300,13 +300,13 @@ const pathLinksArr = [
         {
             class: 'openaigroceriesThumb',
             path: imgUrl4,
-            url: 'https://ecmascript.app/',
+            url: 'https://shop.es9.app/',
             desc: 'OpenAi infused shopping list, with saveable lists'
         },
         {
             class: 'groceriesThumb',
             path: imgUrl3,
-            url: 'https://react-tw-daisy-groceries.web.app/',
+            url: 'https://riskfree3d.web.app/',
             desc: '3D Photography company website'
         },
         {
