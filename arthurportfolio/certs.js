@@ -240,6 +240,7 @@ const certz3 = [
     const imgUrl8 = new URL('./images/portfolio_page_thumbs/mobile_detail_portfolio_3_screens.png', import.meta.url).href
     const imgUrl9 = new URL('./images/portfolio_page_thumbs/jmarx_music_portfolio_3_screens.png', import.meta.url).href
     const imgUrl10 = new URL('./images/portfolio_page_thumbs/NUA_portfolio_3_screens.png', import.meta.url).href
+    const imgUrl11 = new URL('./images/portfolio_page_thumbs/chic_wordle_portfolio_3_screens.png', import.meta.url).href
 
 
     const jpgArr = [];
@@ -268,10 +269,10 @@ const certz3 = [
 
 const pathLinksArr = [
         {
-            class: 'bfpThumb',
-            path: imgUrl1,
-            url: 'https://otwrentals-c3f25.web.app/',
-            desc: 'SPA for Property Rental Co.'
+            class: 'nuaThumb',
+            path: imgUrl10,
+            url: 'https://github.com/ArtimusMaximus/NUA',
+            desc: 'Node Unifi App (Parental Controls)'
         },
         {
             class: 'guitaristThumb',
@@ -280,10 +281,16 @@ const pathLinksArr = [
             desc: 'Luxury & Wedding Guitarist page'
         },
         {
-            class: 'nuaThumb',
-            path: imgUrl10,
-            url: '/',
-            desc: 'Node Unifi App & Device Manager'
+            class: 'cgThumb',
+            path: imgUrl5,
+            url: 'https://claims.gifts/',
+            desc: 'Event Registry Real Time Full Stack SPA'
+        },
+        {
+            class: 'bfpThumb',
+            path: imgUrl1,
+            url: 'https://otwrentals-c3f25.web.app/',
+            desc: 'SPA for Property Rental Co.'
         },
         {
             class: 'artThumb',
@@ -292,10 +299,10 @@ const pathLinksArr = [
             desc: 'Northtown Co. Company Website'
         },
         {
-            class: 'cgThumb',
-            path: imgUrl5,
-            url: 'https://claims.gifts/',
-            desc: 'Event Registry Real Time Full Stack SPA'
+            class: 'artThumb',
+            path: imgUrl11,
+            url: 'https://word.es9.app',
+            desc: 'Chic Wordle Game'
         },
         {
             class: 'openaigroceriesThumb',

@@ -81,21 +81,19 @@
             <p class="my-auto text-slate-300">Semantic HTML</p><p class="my-auto text-slate-300">Web Best Practices</p><p class="my-auto text-slate-300">Problem solving</p>
         </div>
         <!-- portrait -->
-        <div class=
-            "row-span-1
-            col-span-12
-            sm:col-span-4
-            sm:row-span-2
-            md:col-span-3
-            md:row-span-2
-            lg:col-span-2
-            lg:row-span-2
-            flex justify-center items-center
-            flex-col
-            ">
+        <div
+            class="
+                row-span-1
+                col-span-12
+                sm:col-span-4 sm:row-span-2
+                md:col-span-3 md:row-span-2
+                lg:col-span-2 lg:row-span-2
+                flex justify-center items-center
+                flex-col"
+        >
 
             <img class="w-56 sm:w-44 md:w-48 rounded-full border-4 border-solid border-deepBlueLight" src="./images/art.avif" alt="Arthur M. Headshot"/>
-            <button id="portModal" class="portModal sm:hidden px-4 py-3 text-deepBlueMid hover:bg-black hover:border-white hover:text-white bg-white rounded-md mt-3 mb-3 font-bold btn-block">Portfolio Pieces</button>
+            <a href="/#portModal"><button id="portModal" class="portModal sm:hidden px-4 py-3 text-deepBlueMid hover:bg-black hover:border-white hover:text-white bg-white rounded-md mt-3 mb-3 font-bold btn-block">Portfolio Pieces</button></a>
 
         </div>
         <!-- contact info  bg-gradient-to-l from-zinc-900 to-zinc-200 -->
@@ -199,9 +197,9 @@
             </ul>
         </div>
         <!-- education  prev-bg: bg-gradient-to-bl from-zinc-900 to-zinc-400 -->
-        <div class=
-            "bg-brushed
-            bg-slate-700
+        <div
+            class="
+            bg-brushed bg-slate-700
             col-span-12
             row-span-6
             md:col-span-6
@@ -210,8 +208,8 @@
             rounded-lg
             text-slate-50
             p-10
-            border-4 border-solid border-deepBlueMid
-            ">
+            border-4 border-solid border-deepBlueMid"
+        >
             <h1 class="text-center font-bold text-2xl">Education</h1><hr />
                 <h2 class="font-bold italic">Orange Coast College | Coursera | LinkedIn | Udemy | Mongo University</h2><hr />
                     <ul class="list-disc">
@@ -271,7 +269,22 @@
             break-words
             border-4 border-solid border-deepBlueLight
             ">
-            <button id="portModal" class="portModal px-4 py-3 text-deepBlueMid hover:bg-black hover:border-white hover:text-white bg-white rounded-md mt-3 mb-3 font-bold btn-block">Portfolio Pieces</button>
+            <a href="/#portModal">
+            <button
+                id="portModal"
+                class="
+                    portModal
+                    px-4
+                    py-3
+                    text-deepBlueMid
+                    hover:bg-black
+                    hover:border-white
+                    hover:text-white
+                    bg-white
+                    rounded-md
+                    mt-3 mb-3
+                    font-bold btn-block"
+            >Portfolio Pieces</button></a>
             <p class="underline">JS Libraries/frameworks/tools</p><strong>NextJS, React, ExpressJS, Vite</strong>
             <p class="underline">CSS Libraries using:</p><strong>Modern CSS-(Tailwind/Bootstrap/MaterialUI/Vanilla)</strong>
             <p class="underline">Specialty:</p><strong>Full stack application development, API integration</strong>
@@ -283,43 +296,48 @@
     </div>
 
     <!-- modal  -->
-    <div id="modal" class=
-        "hidden
-        bg-slate-700
-        opacity-90
-        w-full
-        h-screen
-        z-10
-        fixed
-        left-0
-        top-0
-        overflow-y-hidden overflow-auto
-        ">
-        <!-- bg-gradient-to-bl from-zinc-900 to-zinc-500  -->
-        <div id="modal-content" class=
-            "bg-brushed
+    <div
+        id="modal"
+        class="
+            hidden
             bg-slate-700
-            text-slate-50
-            rounded-lg
-            z-50
-            w-11/12 sm:w-3/4 lg:w-[80%] xl:w-[65%]
-            m-auto
-            overflow-y-auto
-            overflow-x-visible
-            shadow-lg
-            ">
+            opacity-90
+            w-full
+            h-screen
+            z-10
+            fixed
+            left-0
+            top-0
+            overflow-y-hidden overflow-auto"
+    >
+        <!-- bg-gradient-to-bl from-zinc-900 to-zinc-500  -->
+        <div
+            id="modal-content"
+            class="
+                bg-brushed bg-slate-700
+                text-slate-50
+                rounded-lg
+                z-50
+                w-11/12 sm:w-3/4 lg:w-[80%] xl:w-[65%]
+                m-auto
+                overflow-y-auto
+                overflow-x-visible
+                shadow-lg"
+        >
             <div id="modal-header">
                 <div id="modal-body" class="w-full h-screen overflow-y-auto text-center z-50 overflow-x-visible">
                     <span id="modal-close" class="float-right text-4xl hover:text-red-500 hover:cursor-pointer mr-4 mt-4">X</span>
                     <h2 id="modal-header2" class="text-center text-4xl font-bold italic p-2 mb-2 h-100"></h2><hr />
                     <ul id="modal-ul" class="p-10 pt-5">
                     </ul>
-                    <div id="portThumb" class=
-                        "grid
-                        gap-8
-                        p-3
-                        w-full
-                        "></div>
+                    <div
+                        id="portThumb"
+                        class="
+                            grid
+                            gap-8
+                            p-3
+                            w-full"
+                    ></div>
                 </div>
             </div>
         </div>
@@ -329,13 +347,21 @@
     <script type="module" href="./certs.js">
         import { certz, certz2, certz3, jpgArr, avifArr, pathLinksArr } from './certs.js';
 
+        let revealModal = document.querySelector('#modal');
+        let modalBtn = document.querySelector('#modalPop');
+        let modalHeader = document.querySelector('#modal-header2');
+        let portThumb = document.querySelector('#portThumb');
+        let m = document.querySelector('#modal-ul');
 
-
-        let revealModal = document.querySelector('#modal')
-        let modalBtn = document.querySelector('#modalPop')
-        let modalHeader = document.querySelector('#modal-header2')
-        let portThumb = document.querySelector('#portThumb')
-        let m = document.querySelector('#modal-ul')
+        if (window.location.hash === "#portModal") {
+            modalHeader.innerText = 'Portfolio Page Examples';
+            portThumb.innerHTML = pathLinksArr.map((i, index) =>`
+                <div class="flex justify-center items-center flex-row gap-4 flex-wrap border border-3 border-slate-300 z-[501]">
+                    <a class="shadow-lg h-fit" href="${i.url}" target="_blank">
+                        <img class="z-50 w-full mx-auto hover:transform hover:scale-110 hover:duration-500 hover:ease-in-out z-[501]" src="${i.path}" alt="Arthur M. portfolio example : ${i.desc}" /><label class="font-bold text-xl lg:text-2xl italic">${i.desc}</label></a>
+                </div>`).join('')
+            revealModal.classList.remove('hidden');
+        }
 
         modalBtn.addEventListener('click', e => {
             if (e) {
@@ -343,36 +369,36 @@
                 modalHeader.innerHTML = 'Javascript, NodeJS, React, HTML & CSS Certifications'
                 revealModal.classList.remove('hidden')
             }
-        })
+        });
 
         // Portfolio piece modal
 
         document.querySelectorAll('.portModal').forEach(btn => btn.addEventListener('click', e => {
-
             if (e) {
-
-                modalHeader.innerText = 'Portfolio Page Examples'
+                modalHeader.innerText = 'Portfolio Page Examples';
                 portThumb.innerHTML = pathLinksArr.map((i, index) =>`
                     <div class="flex justify-center items-center flex-row gap-4 flex-wrap border border-3 border-slate-300 z-[501]">
                         <a class="shadow-lg h-fit" href="${i.url}" target="_blank">
                             <img class="z-50 w-full mx-auto hover:transform hover:scale-110 hover:duration-500 hover:ease-in-out z-[501]" src="${i.path}" alt="Arthur M. portfolio example : ${i.desc}" /><label class="font-bold text-xl lg:text-2xl italic">${i.desc}</label></a>
                     </div>`).join('')
-                revealModal.classList.remove('hidden')
+                revealModal.classList.remove('hidden');
             }
         }));
 
         function closeModalAndClear(e){
             if (e.target.id === 'modal' || e.target.id === 'modal-close') {
-                revealModal.classList.add('hidden')
+                revealModal.classList.add('hidden');
                 m.innerHTML = '';
                 portThumb.innerHTML = '';
                 modalHeader.innerText = '';
+                window.location.hash = "home";
             }
         }
         document.querySelector('#modal').addEventListener('click', closeModalAndClear);
         document.querySelector('#modal-close').addEventListener('click', closeModalAndClear);
 
     </script>
+
 
 
 </body>
