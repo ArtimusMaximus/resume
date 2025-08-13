@@ -149,6 +149,8 @@ const certz2 = [
 ];
 
 const certz3 = [
+    "aws-certified-cloud-practitioner_600_600.png",
+    "google-it-support-professional-certificate-v2.png",
     "Meta_front_end_developer.avif",
     "Capstonr retrieving, processing and visualizing data w python Cert 5-1.avif",
     "Arthur Modyman IV-JustJavaScript.com-certificate-1.avif",
