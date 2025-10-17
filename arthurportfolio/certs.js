@@ -151,6 +151,7 @@ const certz2 = [
 const certz3 = [
     "aws-certified-cloud-practitioner_600_600.png",
     "WGU_front_end_dev_cert.png",
+    "Project+-png.png",
     "Meta_front_end_developer.avif",
     "google-it-support-professional-certificate-v2.png",
     "Capstonr retrieving, processing and visualizing data w python Cert 5-1.avif",
