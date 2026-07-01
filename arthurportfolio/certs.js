@@ -149,8 +149,9 @@ const certz2 = [
 ];
 
 const certz3 = [
-    "aws-certified-cloud-practitioner_600_600.png",
+    "WGU_back_end_dev_cert.png",
     "WGU_front_end_dev_cert.png",
+    "aws-certified-cloud-practitioner_600_600.png",
     "Project+-png.png",
     "Meta_front_end_developer.avif",
     "google-it-support-professional-certificate-v2.png",
