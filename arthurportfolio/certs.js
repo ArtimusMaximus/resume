@@ -246,6 +246,7 @@ const certz3 = [
     const imgUrl9 = new URL('./images/portfolio_page_thumbs/jmarx_music_portfolio_3_screens.png', import.meta.url).href
     const imgUrl10 = new URL('./images/portfolio_page_thumbs/NUA_portfolio_3_screens.png', import.meta.url).href
     const imgUrl11 = new URL('./images/portfolio_page_thumbs/chic_wordle_portfolio_3_screens.png', import.meta.url).href
+    const imgUrl12 = new URL('./images/portfolio_page_thumbs/vacation_variety_mobile_screens.png', import.meta.url).href
 
 
     const jpgArr = [];
@@ -278,6 +279,12 @@ const pathLinksArr = [
             path: imgUrl10,
             url: 'https://github.com/ArtimusMaximus/NUA',
             desc: 'Node Unifi App (Parental Controls)'
+        },
+        {
+            class: 'vacationVariety',
+            path: imgUrl12,
+            url: '#portModal',
+            desc: 'Vacation Booking Android Application'
         },
         {
             class: 'guitaristThumb',
